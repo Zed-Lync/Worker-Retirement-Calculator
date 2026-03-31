@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gig Worker Retirement Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gig Worker Retirement Calculator</h1>
+
+  <div class="container">
+    <label>Current Age
+      <input type="number" id="currentAge" value="30">
+    </label>
+
+    <label>Retirement Age
+      <input type="number" id="retirementAge" value="67">
+    </label>
+
+    <label>Current Savings ($)
+      <input type="number" id="currentSavings" value="10000">
+    </label>
+
+    <label>Average Yearly Gig Income ($)
+      <input type="number" id="avgIncome" value="60000">
+    </label>
+
+    <label>% of Income Contributed
+      <input type="number" id="contribRate" value="10">
+    </label>
+
+    <label>Expected Annual Return (%)
+      <input type="number" id="returnRate" value="6">
+    </label>
+
+    <label>Inflation Rate (%)
+      <input type="number" id="inflationRate" value="2.5">
+    </label>
+
+    <label>Safe Withdrawal Rate (%)
+      <input type="number" id="withdrawRate" value="4">
+    </label>
+
+    <button id="calcBtn">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
