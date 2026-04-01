@@ -8,21 +8,23 @@
 </head>
 <body>
 
-    <h1>Worker Retirement Calculator</h1>
+    <div class="container">
+        <h1>Worker Retirement Calculator</h1>
 
-    <div class="calculator">
-        <label for="age">Current Age:</label>
-        <input type="number" id="age" placeholder="Enter your age">
+        <div class="calculator">
+            <label>Current Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
 
-        <label for="retire">Retirement Age:</label>
-        <input type="number" id="retire" placeholder="Enter retirement age">
+            <label>Retirement Age</label>
+            <input type="number" id="retire" placeholder="Enter retirement age">
 
-        <label for="salary">Current Salary ($):</label>
-        <input type="number" id="salary" placeholder="Enter salary">
+            <label>Current Salary ($)</label>
+            <input type="number" id="salary" placeholder="Enter salary">
 
-        <button onclick="calculate()">Calculate</button>
+            <button id="calcBtn">Calculate</button>
 
-        <h2 id="result"></h2>
+            <h2 id="result"></h2>
+        </div>
     </div>
 
     <script src="script.js"></script>
