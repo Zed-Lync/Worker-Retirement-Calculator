@@ -1,4 +1,7 @@
-document.getElementById("calcBtn").addEventListener("click", calculate);
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("calcBtn");
+    btn.addEventListener("click", calculate);
+});
 
 function calculate() {
     const age = parseInt(document.getElementById("age").value);
@@ -11,7 +14,7 @@ function calculate() {
     }
 
     const yearsLeft = retire - age;
-    const estSavings = yearsLeft * salary * 0.1; // Example formula
+    const estSavings = yearsLeft * salary * 0.1;
 
     document.getElementById("result").innerText =
         `You have ${yearsLeft} years left. Estimated savings: $${estSavings.toLocaleString()}`;
